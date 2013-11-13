@@ -1,16 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>com.townflix</groupId>
   <artifactId>kaltura-client</artifactId>
   <version>1.1</version>
+  <packaging>jar</packaging>
+  
+  <name>kaltura client</name>
+  <url>www.kaltura.com</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
   <distributionManagement>
   	<repository>
- 	  <id>repo</id>
+ 	  <id>kaltura-repo</id>
       <url>https://github.com/rohifa/kaltura-mvn-repo</url>  
  	</repository>
   </distributionManagement>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+  
+  <sourceDirectory>src</sourceDirectory>
     <resources>
       <resource>
         <directory>src</directory>
